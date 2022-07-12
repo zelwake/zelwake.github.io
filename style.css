@@ -1,0 +1,118 @@
+.site {
+  width: 1150px;
+  margin: auto;
+}
+
+header, blockquote{
+  font-family: 'Abril Fatface';
+  color: #222;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.headerText {
+  position: absolute;
+  bottom: 30px;
+  left: 250px;
+}
+
+.headerText h1 {
+  font-size: 420%;  
+  margin: 0px;
+}
+
+.headerText h2 {
+  font-size: 200%;
+  margin: 0px;
+}
+
+main {
+  width: 55%;
+  margin: auto;
+}
+
+.textBoxIntro, .textBox {
+  padding: 10px;
+}
+
+.textBoxIntro li {
+  margin-top: 8px;
+  list-style: square;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+p, .textBox, ul {
+  font-family: 'Josefin Sans';
+  color: #222 grey;
+}
+
+.textBox p {
+  font-size: 77%;
+  margin-top: 20px;
+}
+
+h4 {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+h3 {  
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.textBox ul {
+  list-style: square;
+  font-size: 80%;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+main h2 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+main h3 {
+  margin-top: 30px;
+  font-size: 147%;
+}
+
+.line {
+  background: black;
+  height: 3px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+blockquote::before {
+  content: '”';
+  position: absolute;
+  top: -70px;
+  left: 0;
+  font-size: 100px;
+  transform: scale(-1,-1);
+}
+
+blockquote {
+  position: relative;
+  background: #222;
+  color: white;
+  width: 55%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 43px;
+  padding: 40px;
+}
