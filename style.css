@@ -3,7 +3,8 @@
   margin: auto;
 }
 
-header, blockquote{
+header,
+blockquote {
   font-family: 'Abril Fatface';
   color: #222;
   position: relative;
@@ -21,7 +22,7 @@ img {
 }
 
 .headerText h1 {
-  font-size: 420%;  
+  font-size: 420%;
   margin: 0px;
 }
 
@@ -35,7 +36,8 @@ main {
   margin: auto;
 }
 
-.textBoxIntro, .textBox {
+.textBoxIntro,
+.textBox {
   padding: 10px;
 }
 
@@ -48,7 +50,9 @@ p {
   line-height: 1.4em;
 }
 
-p, .textBox, ul {
+p,
+.textBox,
+ul {
   font-family: 'Josefin Sans';
   color: #222 grey;
 }
@@ -66,7 +70,7 @@ h4 {
   margin-bottom: 0px;
 }
 
-h3 {  
+h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -102,7 +106,7 @@ blockquote::before {
   top: -70px;
   left: 0;
   font-size: 100px;
-  transform: scale(-1,-1);
+  transform: scale(-1, -1);
 }
 
 blockquote {
