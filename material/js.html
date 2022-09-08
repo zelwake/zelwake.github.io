@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,63 +8,112 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body> 
+
+<body>
     <main>
-        <h1>Array manipulation</h1>
-        <div class="line">
-            <span class="left">.push()</span>
-            <span class="right">add one element to end</span>
-        </div>
-        <div class="line">
-            <span class="left">.unishft()</span>
-            <span class="right">add one element to start</span>
-        </div>
-        <div class="line">
-            <span class="left">.pop()</span>
-            <span class="right">remove one element from end</span>
-        </div>
-        <div class="line">
-            <span class="left">.shift()</span>
-            <span class="right">remove one element from start</span>
-        </div>
-        <div class="line">
-            <span class="left">.splice(startIndex, numberOfItems, newlyAddedItems)</span>
-            <span class="right">modifies multiple elements next to each other</span>
-        </div>
-        <div class="line">
-            <span class="left">.slice(startIndex, endIndex)</span>
-            <span class="right">copy selected range</span>
-        </div>
-        <div class="line">
-            <span class="left">...</span>
-            <span class="right">whole array (...thisArray)</span>
-        </div>
-        <div class="line">
-            <span class="left">.indexOf()</span>
-            <span class="right">checks if value exists, return position, index or -1</span>
-        </div>
-        <h1>Object manipulation</h1>
-        <div class="line">
-            <span class="left">object.item = value</span>
-            <span class="right">add item to object with value or modifies value of existing item</span>
-        </div>
-        <div class="line">
-            <span class="left">delete object.item</span>
-            <span class="right">removes item from object</span>
-        </div>
-        <div class="line">
-            <span class="left">.hasOwnProperty() / property in object</span>
-            <span class="right">checks if property exists, returns true of false</span>
-        </div>
-        <div class="line">
-            <span class="left">for (item in object) function</span>
-            <span class="right">goes through each item in object</span>
-        </div>
-        <div class="line">
-            <span class="left">Object.keys() function</span>
-            <span class="right">return array of properties in object</span>
-        </div>
+
+
+        <!-- String manipulation part -->
+
+        <section>
+            <h1>String manipulation</h1>
+            <div class="line">
+                <span class="left">.split()</span>
+                <span class="right">separate string into substring based on separator put in (). Result is array without
+                    separator</span>
+            </div>
+            <div class="line">
+                <span class="left">.slice(startIndex, endIndex)</span>
+                <span class="right">extracts a section of a string and returns it as a new string, without modifying the
+                    original string. endIndex is optional</span>
+            </div>
+            <div class="line">
+                <span class="left">.toLowerCase .toUpperCase</span>
+                <span class="right">convert text to either lower case or upper case</span>
+            </div>
+            <div class="line">
+                <span class="left">.indexOf(searchString, position)</span>
+                <span class="right">searches string and return first occurence of specified symbol or string. Position
+                    is optional</span>
+            </div>
+        </section>
+
+
+        <!-- Array manipulation part -->
+
+        <section>
+            <h1>Array manipulation</h1>
+            <div class="line">
+                <span class="left">.push()</span>
+                <span class="right">add one element to end</span>
+            </div>
+            <div class="line">
+                <span class="left">.unishft()</span>
+                <span class="right">add one element to start</span>
+            </div>
+            <div class="line">
+                <span class="left">.pop()</span>
+                <span class="right">remove one element from end</span>
+            </div>
+            <div class="line">
+                <span class="left">.shift()</span>
+                <span class="right">remove one element from start</span>
+            </div>
+            <div class="line">
+                <span class="left">.splice(startIndex, numberOfItems, newlyAddedItems)</span>
+                <span class="right">modifies multiple elements next to each other</span>
+            </div>
+            <div class="line">
+                <span class="left">.slice(startIndex, endIndex)</span>
+                <span class="right">copy selected range, startIndex and endIndex are optional, undefined () start at
+                    0</span>
+            </div>
+            <div class="line">
+                <span class="left">...</span>
+                <span class="right">whole array (...thisArray)</span>
+            </div>
+            <div class="line">
+                <span class="left">.indexOf()</span>
+                <span class="right">checks if value exists, return position, index or -1</span>
+            </div>
+            <div class="line">
+                <span class="left">.join()</span>
+                <span class="right">turn array into string, using separator of choice put inside ()</span>
+            </div>
+            <div class="line">
+                <span class="left">.sort()</span>
+                <span class="right">sort array alphabetically, for numerical: .sort(a, b) { return a - b }</span>
+            </div>
+        </section>
+
+
+        <!-- Object manipulation part -->
+
+        <section>
+            <h1>Object manipulation</h1>
+            <div class="line">
+                <span class="left">object.item = value</span>
+                <span class="right">add item to object with value or modifies value of existing item</span>
+            </div>
+            <div class="line">
+                <span class="left">delete object.item</span>
+                <span class="right">removes item from object</span>
+            </div>
+            <div class="line">
+                <span class="left">.hasOwnProperty() / property in object</span>
+                <span class="right">checks if property exists, returns true of false</span>
+            </div>
+            <div class="line">
+                <span class="left">for (item in object) function</span>
+                <span class="right">goes through each item in object</span>
+            </div>
+            <div class="line">
+                <span class="left">Object.keys() function</span>
+                <span class="right">return array of properties in object</span>
+            </div>
+        </section>
     </main>
-    
+
 </body>
+
 </html>
