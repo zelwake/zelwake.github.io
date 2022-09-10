@@ -61,12 +61,11 @@
             </div>
             <div class="line">
                 <span class="left">.splice(startIndex, numberOfItems, newlyAddedItems)</span>
-                <span class="right">modifies multiple elements next to each other</span>
+                <span class="right">creates new array (startIndex till end or numberOfItems) while modifying called array (removed items added to new array, add newlyAddedItems)</span>
             </div>
             <div class="line">
                 <span class="left">.slice(startIndex, endIndex)</span>
-                <span class="right">copy selected range, startIndex and endIndex are optional, undefined () start at
-                    0</span>
+                <span class="right">copy selected range, startIndex and endIndex are optional, undefined () start at 0</span>
             </div>
             <div class="line">
                 <span class="left">...</span>
@@ -83,6 +82,18 @@
             <div class="line">
                 <span class="left">.sort()</span>
                 <span class="right">sort array alphabetically, for numerical: .sort(a, b) { return a - b }</span>
+            </div>
+            <div class="line">
+                <span class="left">.concat()</span>
+                <span class="right">merges 2 or more arrays into single one</span>
+            </div>
+            <div class="line">
+                <span class="left">.map()</span>
+                <span class="right">creates a new array populated with the results of calling a provided function on every element in the calling array</span>
+            </div>
+            <div class="line">
+                <span class="left">.filter()</span>
+                <span class="right">calls a function on each element of an array and returns a new array containing only the elements for which that function returns true</span>
             </div>
         </section>
 
