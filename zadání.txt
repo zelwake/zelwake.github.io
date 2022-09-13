@@ -1,0 +1,40 @@
+Use this folder structure
+
+    myFirstWebsite/
+        assets/
+            background.png
+            logo.svg
+        index.html
+        styles.css
+
+Tasks
+
+    Use your own name instead of Tony Stark
+    Write two sentences about yourself under your name
+    Figure out the titles of these definitions and put them under the separator ( --- )
+    Try to create a similar style for your webpage
+
+Look out for these
+HTML
+
+    Nav bar with links
+    Title
+    Your name
+    Two sentences about yourself
+    Separator (three dashes)
+    The definitions with titles
+    Link your CSS file to your HTML
+    Divide your HTML into separate semantic tags
+
+CSS
+
+    Paddings
+    Margins
+    Line-height
+    Font-sizes
+    Center your content
+    10% paddings on the sides
+    Use font from google fonts
+    Base text font should be consolas or courier
+    Header background color is #333333
+    Link and subtitle color is #ff0099
