@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body * {
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>Auction house</title>
+
+</head>
+
+<body>
+    <h1>Online Auction House</h1>
+
+    <ul id="items"></ul>
+
+    <p></p>
+
+    <form>
+        <label><select name="item"></select></label>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Amount<input type="number" name="amount" required></label>
+        <input id="button" type="submit" value="Bid">
+    </form>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
