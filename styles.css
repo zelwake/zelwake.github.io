@@ -1,81 +1,96 @@
-/**
-font-family: 'Kanit', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Work Sans', sans-serif;
-**/
-
-html {
-    font-family: 'Courier', Courier, monospace;
-}
-
-body{
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
     margin: 0;
-    background-image: url("assets/topography.png");
+    padding: 0;
 }
 
-a, h2, h3 {
-    color: #ff0099;
-    text-transform: uppercase;
+:root {
+    --header-height: 6rem;
+    --div-height: calc(100vh - var(--header-height));
+    --sides-offset: 5rem;
+    --header-bg-color: darkred;
 }
+
+ul {
+    list-style-type: none;
+}
+
+hr {
+    color: var(--header-bg-color);
+}
+
+/* body {
+    height: 100vh;
+    overflow: hidden;
+} */
 
 header {
-    background-color: #333333;
-    padding: 10px 10%;
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--header-bg-color);
+    position: fixed;
     display: flex;
-}
-
-logo, nav {
-    width: 50%;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding-left: var(--sides-offset);
+    padding-right: var(--sides-offset);
     align-items: center;
-    gap: 30px;
 }
 
-.nav-button a {
-    font: 20px "Kanit";
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation a, .navigation-title {
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 3px;
+    /* word-spacing: 2px; */
+}
+
+.navigation a:hover {
+    /* color: lightgray; */
+    text-decoration: underline;
 }
 
 main {
-    padding: 0 10%;
+    margin-left: calc(2 * var(--sides-offset));
+    margin-right: calc(2 * var(--sides-offset));
 }
 
-#info-about-me {
-    margin: 2% 0;
+main div {
+    padding-top: var(--header-height);
+    min-height: 100vh;
 }
 
-#name {
-    margin: 0;
-    padding: 20px 0;
-    font: 54px "Nunito";
+main div>h2 {
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-#info-about-me p {
-    line-height: 5px;
-    font: 18px "Work Sans";
+div p {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    letter-spacing: 1.3px;
+    word-spacing: 3px;
+    text-align: justify;
+    margin-bottom: 1.2rem;
+    text-indent: 0.8rem;
 }
 
-#separator {
-    text-align: center;
-    font-size: larger;
-    margin: 5% 0;
+div ul li {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    word-spacing: 5px;
 }
 
-#wiki h2 {
-    font: 44px "Nunito";
-    text-align: center;
-}
-
-#wiki h3 {
-    font-size: 36px;
-    margin: 30px 0 10px 0;
-}
-
-#wiki .wiki-item p {
-    font: 22px "work sans";
-    margin: 10px 0 30px 0;
+.site-link, .git-link {
+    display: block;
 }

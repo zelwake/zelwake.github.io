@@ -5,95 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Nunito&family=Work+Sans&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>My first website</title>
+    <title>Profile Page</title>
 </head>
 
 <body>
-
     <header>
-        <logo><img src="assets/aperture.svg" alt="aperture-logo"></logo>
-        <nav>
-            <div class="nav-button"><a href="index.html">Home</a></div>
-            <div class="nav-button"><a href="#wiki">Wiki</a></div>
-            <div class="nav-button"><a href="https://github.com/zelwake" target="_blank">Github</a></div>
-            <div class="nav-button"><a href="https://www.linkedin.com/in/michal-hlad%C3%ADk-1a484b247/" target="_blank">LinkedIn</a></div>
+        <nav class="navigation">
+            <a href="#about-me">About me</a>
+            <a href="#my-projects">My projects</a>
+            <a href="#contact">Contact me</a>
         </nav>
+        <h2 class="navigation-title">Michal Hladík</h2>
     </header>
 
     <main>
-        <div id="info-about-me">
-            <h1 id="name">Michal Hladík</h1>
-            <p>I am 29 years old, currently in middle of changing work fields thanks to my friends, who finally pushed
-                me over. Hopefully for the better.</p>
-            <p>I went to university for 6 years, been working as security guard and bus driver since. In my free time I
-                play games, guitar, work on improving our home and DIY and play with my RC stuff.</p>
+        <div id="about-me">
+            <hr>
+            <h2>About me</h2>
+            <p>
+                I am Junior developer seeking challenges to launch a career. Adept at creative problem solving, coding
+                (JavaScript/TypeScript), and continuous learning. Passionate about using technology to improve people's
+                lives. Excited to bring technical knowledge, drive, and unique approach to a forward&#8209;thinking
+                company fostering growth for both individuals and the team.
+            </p>
+            <p>
+                During Greenfox academy fullstack bootcamp course, I learned these:
+            </p>
+            <ul>
+                <li>Git, Github, Linux basics</li>
+                <li>HTML, CSS</li>
+                <li>JavaScript, TypeScript</li>
+                <li>Nodejs, Nodejs, Express</li>
+                <li>Jest, Cypress</li>
+                <li>MySQL, MongoDB, Prisma (ORM), Mongoose</li>
+                <li>Next.js, React, EJS</li>
+                <li>Docker, Tailwind, Stripe, XMPP, NextAuth, Context API</li>
+            </ul>
         </div>
-
-        <div id="separator">
-            ---
+        <div id="my-projects">
+            <hr>
+            <h2>Projects I worked on</h2>
+            <ul>
+                <li>
+                    <h3>Talent.pm</h3>
+                    <a href="https://talent.pm/" class="site-link">Link to website</a>
+                    <p>
+                        Talent.pm is website designed for freelancers to offer their services. It can be really
+                        anything,
+                        from repairs, cooking, writing essays to chatting, calling or teaching subjects.
+                    </p>
+                    <p>
+                        Site is created with the use of Next.js framework using TypeScript, hosted on Vercel. We were
+                        team of 5 people and it was our project phase project during bootcamp.
+                    </p>
+                    <p>
+                        Together with Next.js, we used tailwind to write CSS, NextAuth to get authentication and
+                        authorization solution. On top of that, we used both MySQL and MongoDB to store most of the site
+                        data. MongoDB is being used for messaging system only, while MySQL stores information about
+                        users, their offers and also what did they buy or someone bought from them. Session is database
+                        driven.
+                    </p>
+                    <p>
+                        We used ORM to connect to databases, instead of writing our queries. For MongoDB we used
+                        Mongoose and for MySQL we did choose Prisma. We also used testing frameworks: Jest for
+                        unit-testing and Cypress for end-to-end testing.
+                    </p>
+                </li>
+                <li>
+                    <h3>Green Bay</h3>
+                    <a href="https://zelwake-green-bay.vercel.app/" class="site-link">Link to website</a>
+                    <a href="https://github.com/zelwake/green-bay" class="git-link">Link to github repo</a>
+                    <p>
+                        Green Bay was project that we got as preparation for final exam at bootcamp. We were to create a
+                        clone of eBay, where user could create profile, have some credits, put something up for sell and
+                        also buy stuff.
+                    </p>
+                    <p>
+                        Site was created using Next.js framework using TypeScript and it was a solo project.
+                    </p>
+                    <p>
+                        We had to use SQL queries as a preparation for final exam so no ORM is used in this project. For
+                        CSS I once again opted to tailwind, since I touched it very lightly during Talent project.
+                    </p>
+                    <p>
+                        Information about users is store inside database but authentication/authorization is handled
+                        with JWT this time, to practice both login methods.
+                    </p>
+                    <p>
+                        Each newly created user has credit of 300 and at this moment, there is no way to increase this
+                        amount. Whenever someone buys a thing, this item will be hidden from front-page list, yet on
+                        it's product page, a buyer can now be seen. That's all the functionality of this project at this
+                        moment.
+                    </p>
+                </li>
+            </ul>
         </div>
-
-        <div id="wiki">
-            <h2>Technology Wiki</h2>
-            <div class="wiki-item">
-                <h3>Logic gate</h3>
-                <p>
-                    It is an idealized or physical device implementing a Boolean function; that is, it performs a
-                    logical
-                    operation on one or more binary inputs and produces a single binary output.
-                </p>
-            </div>
-            <div class="wiki-item">
-                <h3>ASCII</h3>
-                <p>
-                    It stands for American Standard Code for Information Interchange. Computers can only understand
-                    numbers,
-                    so it is the numerical representation of a character such as 'a' or '@' or an action of some sort.
-                </p>
-            </div>
-            <div class="wiki-item">
-                <h3>RAM</h3>
-                <p>
-                    It is a form of computer data storage which stores frequently used program instructions to increase
-                    the
-                    general speed of a system. It can be randomly accessed. Data items to be read or written in almost
-                    the
-                    same amount of time irrespective of the physical location of data inside the memory.
-                </p>
-            </div>
-            <div class="wiki-item">
-                <h3>Programming language</h3>
-                <p>
-                    A formal language that specifies a set of instructions that can be used to produce various kinds of
-                    output. They generally consist of instructions for a computer and can be used to create programs
-                    that
-                    implement specific algorithms.
-                </p>
-            </div>
-            <div class="wiki-item">
-                <h3>Domain Name System</h3>
-                <p>
-                    A hierarchical decentralized naming system for computers, services, or other resources connected to
-                    the
-                    Internet or a private network. It associates various information with domain names assigned to each
-                    of
-                    the participating entities.
-                </p>
-            </div>
-            <div class="wiki-item">
-                <h3>Hypertext Transfer Protocol</h3>
-                <p>
-                    An application protocol for distributed, collaborative, and hypermedia information systems. It is
-                    the
-                    foundation of data communication for the World Wide Web. It is the standard protocol to exchange or
-                    transfer hypertext.
-                </p>
-            </div>
+        <div id="contact">
+            <hr>
+            <h2>Contact me</h2>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/michal-hlad%C3%ADk-1a484b247/">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/zelwake">GitHub</a>
+                </li>
+            </ul>
         </div>
     </main>
 </body>
